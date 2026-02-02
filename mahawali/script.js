@@ -1,6 +1,4 @@
-// =====================
-// CAROUSEL FUNCTIONALITY
-// =====================
+
 let currentIndex = 0;
 const wrapper = document.querySelector('.carousel-wrapper');
 const slides = document.querySelectorAll('.carousel-slide');
@@ -116,9 +114,7 @@ document.addEventListener('keydown', (e) => {
 
 document.addEventListener('DOMContentLoaded', initCarousel);
 
-// =====================
-// MOBILE MENU TOGGLE
-// =====================
+// mobile toggle
 function toggleMenu() {
     const menu = document.querySelector('.nav-menu');
     if (menu) menu.classList.toggle('active');
@@ -131,9 +127,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// =====================
-// SMOOTH SCROLLING
-// =====================
+//scrool effect
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -143,3 +137,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
